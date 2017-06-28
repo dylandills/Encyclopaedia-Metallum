@@ -4,13 +4,14 @@ Metal = function(){
 };
 
 Metal.prototype.getMetal = function(band, displayBand) {
-  $.get('http://em.wemakesites.net/search/:band_name/:keyword' + '&appid=' + apiKey).then(function(response) {
-    // displayBand(band, response.main.band);
-    console.log(response.main.band);
+  $.get('http://em.wemakesites.net/search/band_name/' + band + '?api_key=' + apiKey).then(function(response) {
+    console.log(JSON.parse(response));
+    var parsedResponse = JSON.parse(response);
+    console.log(parsedResponse.data.search_results[0]);
+    displayBand(band, parsedResponse.data.search_results[0]);
   }).fail(function(error) {
     $('.showMetal').text(error.responseJSON.message);
   });
-  // console.log(displayBand);
 };
 
 exports.metalModule = Metal;

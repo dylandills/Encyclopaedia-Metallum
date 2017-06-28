@@ -1,7 +1,5 @@
 var Metal = require('./../js/metal.js').metalModule;
 
-var apiKey = require('./../.env').apiKey;
-
 var displayBand = function(band, bandData) {
   $('.showMetal').text();
 };
