@@ -5,7 +5,7 @@ var displayBand = function(band, bandName, bandGenre, bandCountry) {
 };
 
 var displayRandom = function(bandName, bandGenre, bandCountry) {
-  $('.randomMetal').text("The band you were searching for was " + band + ". " + "Here's some info about them from the Encyclopedia Metallum: " + " Name: " + bandName + ", Genre: " + bandGenre + ", Country of Origin: " + bandCountry);
+  $('.randomMetal').text("Here's a random Metal Band for you: " + " Name: " + bandName + ", Genre: " + bandGenre + ", Country of Origin: " + bandCountry);
 };
 // console.log(displayBand);
 

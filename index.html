@@ -2,22 +2,45 @@
 <html>
   <head>
     <link rel="stylesheet" href="build/css/vendor.css">
-    <!-- <link rel="stylesheet" href="build/css/styles.css"> -->
+    <link rel="stylesheet" href="build/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Metal+Mania" rel="stylesheet">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
     <title>Metal Band API</title>
   </head>
   <body>
     <div class="container">
-      <h1 class="logo">Metal Band API</h1>
-      <label for="metal-band">Enter a band:</label>
-      <input id="metal-band" type="text">
-      <button class="btn-success" id="metal">Rock on!</button>
-      <div class="showMetal"></div>
-      <br>
-      <h2>Click the button for a random band!</h2>
-      <button type="btn-success" name="button" id="random">Get Random!</button>
-      <div class="randomMetal"></div>
+      <div class="nav-bar">
+        <div class="pentagram"><img src="img/pentagram.jpg" alt="Pentagram"></div>
+        <h1 class="logo"><img src="img/metal-logo.png" alt="Metal Logo"></h1>
+        <div class="pentagram"><img src="img/pentagram.jpg" alt="Pentagram"></div>
+      </div>
+      <div class="main-content">
+        <div class="band-search">
+          <label for="metal-band"><h2>Enter a band:<h2></label>
+            <input id="metal-band" type="text">
+            <button class="btn-success" id="metal">Rock on!</button>
+          <div class="showMetal"></div>
+        </div>
+        <div class="random-band">
+          <h2>Click the button for a random band!</h2>
+          <button type="btn-success" name="button" id="random">Get Random!</button>
+          <div class="randomMetal"></div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="pentagram"><img src="img/pentagram.jpg" alt="Pentagram"></div>
+        <div id="allthethings">
+        <div id="gogo">METAL HOVER</div>
+          <div id="circle"></div>
+          <div id="line1"></div>
+          <div id="line2"></div>
+          <div id="line3"></div>
+          <div id="line4"></div>
+          <div id="line5"></div>
+        </div>
+        <div class="pentagram"><img src="img/pentagram.jpg" alt="Pentagram"></div>
+      </div>
     </div>
   </body>
 </html>

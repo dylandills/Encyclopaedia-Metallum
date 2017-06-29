@@ -1,0 +1,16 @@
+body {
+  background-color: black;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+button {
+  width: 200px;
+  margin: auto;
+  background-color: green;
+}
+h1, h2, label {
+  margin: auto;
+  margin-bottom: 20px;
+}

@@ -45,7 +45,7 @@ gulp.task('serve', function() {
 
   gulp.watch(['*.html'], ['htmlBuild']);
   gulp.watch(['js/*.js'], ['jsBuild']);
-  gulp.watch(["scss/*.scss"], ['cssBuild']);
+  gulp.watch(["content/scss/**/*.scss"], ['cssBuild']);
   gulp.watch(['bower.json'], ['bowerBuild']);
 });
 
@@ -104,7 +104,7 @@ gulp.task('bowerCSS', function() {
 gulp.task('bower', ['bowerJS', 'bowerCSS']);
 
 gulp.task('cssBuild', function() {
-  return gulp.src(['scss/*.scss'])
+  return gulp.src(['content/scss/**/*.scss'])
     .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(sourcemaps.write())
