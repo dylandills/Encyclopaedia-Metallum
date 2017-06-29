@@ -8,7 +8,7 @@ Metal.prototype.getMetal = function(band, displayBand) {
     console.log(JSON.parse(response));
     var parsedResponse = JSON.parse(response);
     console.log(parsedResponse.data.search_results[0]);
-    displayBand(band, parsedResponse.data.search_results[0]);
+    displayBand(band, parsedResponse.data.search_results[0].name, parsedResponse.data.search_results[0].genre, parsedResponse.data.search_results[0].country);
   }).fail(function(error) {
     $('.showMetal').text(error.responseJSON.message);
   });
