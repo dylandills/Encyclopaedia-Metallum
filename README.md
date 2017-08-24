@@ -5,12 +5,11 @@
 #### By **Dylan Dills and Andrew Dalton**
 
 ## Description
-
-
+Feeling metal and want to call upon a sick API to display facts about your favorite metal band or find a random one? Get out of the pit and come to this application, which calls upon a gnarly API to display your favorite band with name, genre, and country, or you can just click to get a random one. 
 
 ## Planning
 
-1. Configuration/dependencies
+## Configuration/dependencies
   * Install the following packages:
 
     * Node Packages
@@ -35,31 +34,27 @@
 
   * It could include a short description of what each does for you
 
-2. Specifications
-| Behavior | Input | Output |
-| :--------| :---- | :------|
+  ## Specifications
+  |Behavior|Input|Output|
+  |---|:---|:---|
+  | User Inputs Band| "Metallica" | Receives message "The band you were searching for was Metallica. Here's some info about them from the Encyclopedia Metallum:  Name: Metallica" etc |
+  User clicks "Get Random Band" | "Get Random!"| Recieves message "Here's a random Metal Band for you:" with band name, band genre, and band country of origin (currently displays at undefined) |
 
-3. Integration
+## Integration
   * Initial routes or index pages with all dependencies in Controller/index.html head
     * build/css/vendor.css
     * build/css/main.css
     * build/js/vendor.min.js
     * build/js/app.js
-  * Display...
-  * Integrate feature that...
-
-4. UX/UI
-  * Include and modify bootstrap/materialize/Sass etc.
-  * Develop custom style
-
-5. Polish
-  * Refactor minor portion of...
-  * Delete unused...
-  * Make README awesome
-
 
 ## Setup/Installation Requirements
 
+* Recieve API key by going to http://em.wemakesites.net/
+* Clone the repository (https://github.com/dylandills/Encyclopaedia-Metallum)
+* Create .env file at top of directory, with putting exports.apiKey = "YOUR API KEY";
+* Run 'npm install' in your chosen terminal application
+* Run 'bower install' in your chosen terminal application
+* Run 'gulp serve' in your chosen terminal application, then wait for your browser to be opened to the appropriate page.
 
 
 ## Known Bugs
@@ -79,7 +74,7 @@
 
 ## Support and contact details
 
-_Email no one with any questions, comments, or concerns._
+_Email dylan.dills@gmail.com with any questions, comments, or concerns._
 
 ### License
 
