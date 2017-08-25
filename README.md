@@ -50,7 +50,7 @@ Feeling metal and want to call upon a sick API to display facts about your favor
 ## Setup/Installation Requirements
 
 * Recieve API key by going to http://em.wemakesites.net/
-* Clone the repository (https://github.com/dylandills/Encyclopaedia-Metallum)
+* Clone the repository (https://github.com/dylandills/Encyclopaedia-Metallum.git)
 * Create .env file at top of directory, with putting exports.apiKey = "YOUR API KEY";
 * Run 'npm install' in your chosen terminal application
 * Run 'bower install' in your chosen terminal application
